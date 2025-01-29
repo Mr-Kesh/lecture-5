@@ -4,14 +4,14 @@
 
 // Test cases for Sum function
 TEST_CASE("Sum function") {
-    REQUIRE(Sum({1, 2, 3}) == 6);  
-
+    REQUIRE(Sum(std::vector<int>{1, 2, 3}) == 6); 
+    REQUIRE(Sum(std::vector<double>{1.5, 2.5, 3.0}) == 7.0); 
 }
 
 // Test cases for Product function
 TEST_CASE("Product function") {
-    REQUIRE(Product({2, 3, 4}) == 24);  
-      
+    REQUIRE(Product(std::vector<int>{2, 3, 4}) == 24); 
+    REQUIRE(Product(std::vector<double>{1.5, 2.0, 3.0}) == 9.0);
 }
 
 // Test cases for Factorial function
